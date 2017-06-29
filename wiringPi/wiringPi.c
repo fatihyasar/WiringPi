@@ -710,7 +710,7 @@ int piGpioLayout (void)
     piGpioLayoutOops ("No \"Hardware\" line") ;
 
   if (wiringPiDebug)
-    printf ("piGpioLayout: Hardware: %s\n", line) ;
+    fprintf ("piGpioLayout: Hardware: %s\n", line) ;
 
 // See if it's BCM2708 or BCM2709 or the new BCM2835.
 
@@ -728,7 +728,7 @@ int piGpioLayout (void)
     fprintf (stderr, "to projects@drogon.net. If this is not a Raspberry Pi then you\n") ;
     fprintf (stderr, "are on your own as wiringPi is designed to support the\n") ;
     fprintf (stderr, "Raspberry Pi ONLY.\n") ;
-    exit (EXIT_FAILURE) ;
+    // exit (EXIT_FAILURE) ;
   }
 
 // Right - we're Probably on a Raspberry Pi. Check the revision field for the real
