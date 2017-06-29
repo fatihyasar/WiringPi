@@ -710,7 +710,7 @@ int piGpioLayout (void)
     piGpioLayoutOops ("No \"Hardware\" line") ;
 
   if (wiringPiDebug)
-    fprintf ("piGpioLayout: Hardware: %s\n", line) ;
+    printf ("piGpioLayout: Hardware: %s\n", line) ;
 
 // See if it's BCM2708 or BCM2709 or the new BCM2835.
 
