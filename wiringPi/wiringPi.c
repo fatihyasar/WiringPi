@@ -730,6 +730,7 @@ int piGpioLayout (void)
     fprintf (stderr, "Raspberry Pi ONLY.\n") ;
     // exit (EXIT_FAILURE) ;
   }
+  
 
 // Right - we're Probably on a Raspberry Pi. Check the revision field for the real
 //	hardware type
